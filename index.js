@@ -21,6 +21,10 @@ console.log('* Marketing');
 
 console.log('My Previous Experience:');
 
+let displayPosition(title, company, description) {
+    console.log(`* ${title} at ${company}`)
+}
+
 console.log('Visitor Services Rep at McWane Science Center');
 
 console.log('Coordinate field trips, facilitate large groups, and ensure gusts have a great time');
