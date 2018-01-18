@@ -21,32 +21,37 @@ console.log('* Marketing');
 
 console.log('My Previous Experience:');
 
-let displayPosition(title, company, description) {
-    console.log(`* ${title} at ${company}`)
+let displayPosition = function(title, company, description) {
+    console.log(`* ${title} at ${company}`);
+    console.log(description);
 }
 
-console.log('Visitor Services Rep at McWane Science Center');
+displayPosition('Visitor Services Rep', 'McWane Science Center', '- Coordinate field trips, facilitate large groups, and ensure gusts have a great time')
 
-console.log('Coordinate field trips, facilitate large groups, and ensure gusts have a great time');
-
-console.log('Assistant Manager at Cold Stone Creamery');
-
-console.log('Decorate cakes, train staff members, make ice cream');
+displayPosition('Assistant Manager', 'Cold Stone Creamery', '- Decorate cakes, train staff members, make ice cream')
 
 console.log('My Skills:');
 
-console.log('* Check It: Tap dancing');
+let displaySkill = function(skill, iscool) {
+    if (iscool === true) {
+        console.log(`Check It: ${skill}`);
+    } else {
+        console.log(skill);
+    }
+}
 
-console.log('* Check It: Fluent in 4 languages');
+displaySkill('Tap dancing', true)
 
-console.log('* Clarinet');
+displaySkill('Fluent in four languages', true)
 
-console.log('* Professional Dodgeball');
+displaySkill('Clarinet', false)
 
-console.log('* Check It: Dog Whisperer');
+displaySkill('Professional dodgeball', false)
 
-console.log('* HTML');
+displaySkill('Cat whisperer', true)
 
-console.log('* CSS');
+displaySkill('HTML', false)
 
-console.log('* Check It: App Development');
+displaySkill('CSS', false)
+
+displaySkill('App development', true)
